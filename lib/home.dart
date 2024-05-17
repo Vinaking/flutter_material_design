@@ -22,6 +22,31 @@ class _HomeState extends State<Home> {
         padding: const EdgeInsets.fromLTRB(30, 30, 30, 30),
         children: [
           const Text(
+            'View: ',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 15,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          ElevatedButton(
+              onPressed: () => Navigator.pushNamed(context, '/list_view'),
+              child: const Text('List View')
+          ),
+          ElevatedButton(
+              onPressed: () => Navigator.pushNamed(context, '/grid_view'),
+              child: const Text('Grid View')
+          ),
+          ElevatedButton(
+              onPressed: () => Navigator.pushNamed(context, '/list_view_multi_type'),
+              child: const Text('List View Multi Type')
+          ),
+          ElevatedButton(
+              onPressed: () => Navigator.pushNamed(context, '/scroll_view'),
+              child: const Text('Scroll View')
+          ),
+          const SizedBox(height: 20,),
+          const Text(
             'Navigation: ',
             textAlign: TextAlign.center,
             style: TextStyle(
